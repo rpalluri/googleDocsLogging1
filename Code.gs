@@ -2,7 +2,7 @@
 function doGet(request) {
   if(request != null) {
 
-    var ss = SpreadsheetApp.openById("REPLACE ME WITH SPREADSHEET ID");
+    var ss = SpreadsheetApp.openById("1-dlwVOw_AJGkIMlxdmZRXUdUA3tzjE36V6jYwfE6qyM  ");
     var sheet = ss.getSheetByName("Sheet1");
     var firstRowRange = sheet.getRange(1, 1, 1, sheet.getLastColumn());
   
