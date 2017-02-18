@@ -99,7 +99,7 @@ def childStartPage() {
         }
         
         section([mobileOnly:true], "Options") {
-            label(title: "Assign a name", required: true)
+            label(title: "Assign a name 2", required: true)
         }
     }
 }
@@ -280,9 +280,9 @@ private queueValue(evt, Closure convert) {
         
         if ( atomicState.queue == [:] ) {
             // format time in the same wasy as sheets does
-            log.debug "encoding timestamp ${evt.date.format( 'M/d/yyyy HH:mm:ss', location.timeZone )}"
-            def eventTime = URLEncoder.encode(evt.date.format( 'M/d/yyyy HH:mm:ss', location.timeZone ))
-            addToQueue("Time", eventTime)
+            //log.debug "encoding timestamp ${evt.date.format( 'M/d/yyyy HH:mm:ss z')}"
+            //def eventTime = URLEncoder.encode(evt.date.format( 'M/d/yyyy HH:mm:ss UTC'))
+            //addToQueue("Time", eventTime)
         }
         addToQueue(keyId, value)
         
